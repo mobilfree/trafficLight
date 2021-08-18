@@ -7,13 +7,27 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
+    @IBOutlet weak var signalRed: UIView!
+    
+    @IBOutlet weak var signalYellow: UIView!
+    
+    @IBOutlet weak var signalGreen: UIView!
+    
+    @IBOutlet weak var showSignal: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        signalRed.layer.cornerRadius = 73
+        signalYellow.layer.cornerRadius = 73
+        signalGreen.layer.cornerRadius = 73
+        showSignal.layer.cornerRadius = 10
+        
     }
 
-
+    @IBAction func startTrafficsignal() {
+    }
+    
 }
 
